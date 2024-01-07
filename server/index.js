@@ -13,7 +13,7 @@ app.use(cors(
 ));
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://romnick:1234@romnickdb.e14diyv.mongodb.net/myreg')
+mongoose.connect('mongodb+srv://romnick:1234@romnickdb.e14diyv.mongodb.net/reg')
 
 app.post('/register', async(req,res)=>{
     const {name,username,password} = req.body;
@@ -26,6 +26,17 @@ app.post('/register', async(req,res)=>{
             const saveUser = new User({name,username,password});
             await saveUser.save();
         }
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+app.get('/display', async(req,res)=>{
+
+    try {
+       
+        const data = await User.find();
+        res.json(data)
     } catch (error) {
         console.log(error)
     }

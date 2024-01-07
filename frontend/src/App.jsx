@@ -6,7 +6,7 @@ import axios from 'axios'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
-
+import Register from './pages/register';
 import Display from './pages/display';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://myreg-server.vercel.app', {name,username,password})
+    axios.post('https://myreg-server.vercel.app/', {name,username,password})
     .then(result => console.log(result))
     .catch(err => console.log(err))
   }

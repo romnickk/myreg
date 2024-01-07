@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = ()=>{
 const navigate = useNavigate();
-axios.get('https://myreg-chi.vercel.app/home')
+axios.get('https://localhost:3000/home')
     .then(result => console.log(result))
     .catch(err => console.log(err))
     

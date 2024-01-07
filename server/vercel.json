@@ -9,7 +9,7 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"/pages/home.jsx"
+            "dest":"/home.jsx"
         },
         {
             "src":"/home",

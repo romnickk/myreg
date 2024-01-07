@@ -19,7 +19,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://myreg-server.vercel.app/home', {name,username,password})
+    axios.post('https://myreg-server.vercel.app', {name,username,password})
     .then(result => console.log(result))
     .catch(err => console.log(err))
   }

@@ -42,6 +42,10 @@ app.get('/display', async(req,res)=>{
     }
 })
 
+app.get('/home', (req,res) =>{
+    res.json({message:"hello"})
+})
+
 const port = 3000;
 app.listen(port, ()=>{
     console.log(`running at port ${port}`)

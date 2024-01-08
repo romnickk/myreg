@@ -17,10 +17,10 @@ function App() {
      <div>
      <BrowserRouter>
       <Routes>
-        <Route path='/api/home' element={<Home/>}></Route>
+        <Route path='/api/userRoute/home' element={<Home/>}></Route>
         <Route path='/api/about' element={<About/>}></Route>
         <Route path='/' element={<Register/>}></Route>
-        <Route path='/api/display' element={<Display/>}></Route>
+        <Route path='/api/userRoute/display' element={<Display/>}></Route>
       </Routes>
       </BrowserRouter>
      </div>

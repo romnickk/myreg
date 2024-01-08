@@ -15,7 +15,7 @@
             "src":"/api/display",
             "methods":[
                 "POST",
-                "GET    "
+                "GET"
             ],
             "dest":"/api/userRoute.js"
         },

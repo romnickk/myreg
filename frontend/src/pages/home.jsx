@@ -4,7 +4,7 @@ import axios from 'axios'
 
 const Home = ()=>{
 const navigate = useNavigate();
-axios.get('http://localhost:3000/api/home')
+axios.get('/api/userRoute/home')
     .then(result => console.log(result))
     .catch(err => console.log(err))
     

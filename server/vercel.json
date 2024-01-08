@@ -18,6 +18,10 @@
                 "GET    "
             ],
             "dest":"/api/userRoute.js"
+        },
+        {
+            "src":"/api/register",
+            "dest":"/api/userRoute.js"
         }
     ]
 }

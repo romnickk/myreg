@@ -12,7 +12,7 @@ router.get('/display',async(req,res)=>{
     }
 });
 
-router.post('/register', async(req,res)=>{
+router.post('/', async(req,res)=>{
     const {name,username,password} = req.body;
     const check = await User.findOne({username});
 

@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path='/api/home' element={<Home/>}></Route>
         <Route path='/api/about' element={<About/>}></Route>
-        <Route path='/api/register' element={<Register/>}></Route>
+        <Route path='/' element={<Register/>}></Route>
         <Route path='/api/display' element={<Display/>}></Route>
       </Routes>
       </BrowserRouter>

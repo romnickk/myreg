@@ -10,7 +10,7 @@ function Display() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/display');
+            const response = await fetch('myreg-server.vercel.app/api/display');
             const jsonData = await response.json();
             setData(jsonData);
         } catch (error) {

@@ -5,13 +5,13 @@ const User = require('./model/user')
 const routes = require('./api/userRoute')
 
 const app = express();
-app.use(cors())
-//     {
-//         origin:["https://myreg-chi.vercel.app"],
-//         methods:["POST","GET"],
-//         credentials:true
-//     }
-// ));
+app.use(cors(
+    {
+        origin:["https://myreg-chi.vercel.app"],
+        methods:["POST","GET"],
+        credentials:true
+    }
+));
 app.use(express.json());
 app.use('/api' , routes)
 

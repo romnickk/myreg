@@ -9,15 +9,15 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"/home.jsx"
+            "dest":"/index.js"
         },
         {
-            "src":"/home",
+            "src":"/api/display",
             "methods":[
                 "POST",
                 "GET    "
             ],
-            "dest":"/pages/home.jsx"
+            "dest":"/api/userRoute.js"
         }
     ]
 }

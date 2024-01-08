@@ -1,9 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios'
 
 const Home = ()=>{
 const navigate = useNavigate();
-axios.get('https://myreg-server.vercel.app/home')
+axios.get('http://localhost:3000/api/home')
     .then(result => console.log(result))
     .catch(err => console.log(err))
     
